@@ -1,0 +1,134 @@
+/* Required height of parents of the Full Page Intro and Intro itself */
+
+html,
+body,
+.view {
+    height: 100%;
+}
+
+@font-face {
+    font-family: 'opticopperplateregular';
+    src: url('../fonts/opticopperplate-webfont.woff2') format('woff2'), url('../fonts/opticopperplate-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header-txt {
+    padding-top: 150px !important;
+}
+
+.img-circle {
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.centered {
+    text-align: center;
+}
+
+.navbar {
+    font-size: 120%;
+}
+
+.logo {
+    height: 50px;
+}
+
+.big-font {
+    font-size: 120%;
+}
+
+.center {
+    text-align: center;
+}
+
+.text-just {
+    text-align: justify;
+}
+
+.fpi {
+    background-image: url('../img/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(6px);
+}
+
+.fpi::after {
+    content: "";
+    background: url('../img/bg.jpg');
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.tilt {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+.tilt:hover {
+    -webkit-transform: rotate(-10deg);
+    -moz-transform: rotate(-10deg);
+    -o-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+}
+
+.h1-web {
+    font-size: 350%;
+}
+
+.h2-web {
+    font-size: 150%;
+}
+
+.cop {
+    font-family: 'opticopperplateregular';
+}
+
+.a-green {
+    color: #339933 !important;
+}
+
+.center_align {
+    text-align: center;
+}
+
+.green {
+    background-color: #339933;
+}
+
+
+/* Navbar animation */
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.2);
+    font-family: 'opticopperplateregular';
+}
+
+.top-nav-collapse {
+    background-color: #339933 !important;
+}
+
+
+/* Adding color to the Navbar on mobile */
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #339933 !important;
+    }
+}
+
+
+/* Footer color for sake of consistency with Navbar */
+
+.page-footer {
+    background-color: #339933;
+}
